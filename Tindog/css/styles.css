@@ -8,13 +8,23 @@ body {
 }
 
 #features {
-  text-align: center;
+  padding: 9.875rem 0;
 }
 
 h1 {
   font-weight: 900;
   font-size: 3.5rem;
   line-height: 1.5;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 1.75rem 0;
+}
+
+p {
+  color: #8f8f8f;
 }
 
 .container-fluid {
@@ -52,8 +62,16 @@ h1 {
   transform: rotate(25deg);
 }
 
-/* Feature Image */
+/* Feature Section */
+.feature-box {
+  text-align: center;
+  padding: 0 5%;
+}
+
 .feature-picture {
   color: #ef8172;
-  font-size: 4.375rem;
+}
+
+.feature-picture:hover {
+  color: #ff4c68;
 }
