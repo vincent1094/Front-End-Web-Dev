@@ -7,6 +7,10 @@ body {
   color: #fff;
 }
 
+#features {
+  text-align: center;
+}
+
 h1 {
   font-weight: 900;
   font-size: 3.5rem;
@@ -46,4 +50,10 @@ h1 {
 .title-image {
   width: 60%;
   transform: rotate(25deg);
+}
+
+/* Feature Image */
+.feature-picture {
+  color: #ef8172;
+  font-size: 4.375rem;
 }
