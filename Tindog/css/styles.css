@@ -27,7 +27,9 @@ p {
 /* Title Section */
 #title {
   background-color: #ff4c68;
-  color: #fff;
+  margin-bottom: -193px;
+  position: relative;
+  z-index: -1;
 }
 
 .container-fluid {
@@ -68,6 +70,7 @@ p {
 /* Feature Section */
 #features {
   padding: 9.875rem 0;
+  background: #fff;
 }
 
 .feature-box {
