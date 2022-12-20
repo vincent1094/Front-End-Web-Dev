@@ -22,18 +22,21 @@ h3 {
 
 p {
   color: #8f8f8f;
+  font-weight: 500;
 }
 
 /* Title Section */
 #title {
   background-color: #ff4c68;
-  margin-bottom: -193px;
+  color: #fff;
+}
+
+#title .col-lg-6 {
   position: relative;
-  z-index: -1;
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 /* Navigation Bar */
@@ -65,12 +68,15 @@ p {
 .title-image {
   width: 60%;
   transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
 }
 
 /* Feature Section */
 #features {
   padding: 9.875rem 0;
-  background: #fff;
+  position: relative;
+  background-color: #fff;
 }
 
 .feature-box {
@@ -132,4 +138,45 @@ p {
 
 .card {
   height: 100%;
+}
+
+/* Call to action */
+
+#cta {
+  background-color: #ff4c68;
+  padding: 7% 15%;
+  text-align: center;
+}
+
+.cta-heading {
+  font-size: 3.2rem;
+  line-height: 1.5;
+  width: 70%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+#cta button {
+  margin: 5% 2% 0 0;
+}
+
+#footer {
+  background-color: #fff;
+  padding: 5% 15%;
+  text-align: center;
+}
+
+#footer i {
+  padding: 0 0.7% 2%;
+}
+
+@media (max-width: 990px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    transform: rotate(0deg);
+    position: static;
+  }
 }
