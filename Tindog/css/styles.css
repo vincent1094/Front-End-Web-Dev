@@ -61,7 +61,7 @@ p {
 
 /* Download Button */
 .download-button {
-  margin: 5% 3% 5% 0;
+  margin: 5% 3% 0;
 }
 
 /* Title Image */
@@ -145,15 +145,15 @@ p {
 #cta {
   background-color: #ff4c68;
   padding: 7% 15%;
+  color: #fff;
   text-align: center;
 }
 
 .cta-heading {
   font-size: 3.2rem;
   line-height: 1.5;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
-  color: #fff;
 }
 
 #cta button {
@@ -167,7 +167,7 @@ p {
 }
 
 #footer i {
-  padding: 0 0.7% 2%;
+  margin: 0 0.7% 2%;
 }
 
 @media (max-width: 990px) {
