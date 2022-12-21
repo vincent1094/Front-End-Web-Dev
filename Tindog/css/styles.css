@@ -1,42 +1,52 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
-  font-size: 3.5rem;
-  line-height: 1.5;
 }
 
-h2 {
-  font-weight: bold;
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-h3 {
-  font-weight: bold;
+/* h3 {
   font-size: 1.5rem;
   margin: 1.75rem 0;
-}
+} */
+/* Price Section */
 
 p {
   color: #8f8f8f;
   font-weight: 500;
 }
 
+/* Heading */
+.big-heading {
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading { /* Modularity */
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 7% 15%;
+}
+
 /* Title Section */
 #title {
   background-color: #ff4c68;
   color: #fff;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
 }
 
 #title .col-lg-6 {
   position: relative;
-}
-
-.container-fluid {
-  padding: 3% 15% 7%;
 }
 
 /* Navigation Bar */
@@ -79,6 +89,11 @@ p {
   background-color: #fff;
 }
 
+.feature-title {
+  font-size: 1.5rem;
+  margin: 1.75rem 0;
+}
+
 .feature-box {
   text-align: center;
   padding: 0 5%;
@@ -94,20 +109,21 @@ p {
 
 /* Testimonial Section */
 #testimonials {
-  padding: 10% 0 7%;
+  /* padding: 10% 0 7%; */
   text-align: center;
   background-color: #ef8172;
   color: #fff;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .testimonial-image {
   width: 10%;
   border-radius: 100%;
   margin: 1.25rem;
-}
-
-.carousel-inner {
-  padding: 0 15%;
 }
 
 #press {
@@ -128,6 +144,11 @@ p {
   text-align: center;
 }
 
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
 .pricing-col {
   padding: 3% 2%;
 }
@@ -140,36 +161,39 @@ p {
   height: 100%;
 }
 
-/* Call to action */
-
+/* Call to action Section*/
 #cta {
   background-color: #ff4c68;
-  padding: 7% 15%;
   color: #fff;
   text-align: center;
 }
 
-.cta-heading {
+/* .cta-heading {
   font-size: 3.2rem;
   line-height: 1.5;
   width: 80%;
   margin: 0 auto;
-}
+} */
 
 #cta button {
   margin: 5% 2% 0 0;
 }
 
+/* Footer Section */
 #footer {
   background-color: #fff;
-  padding: 5% 15%;
   text-align: center;
+}
+
+#footer .container-fluid {
+  padding: 5% 15%;
 }
 
 #footer i {
   margin: 0 0.7% 2%;
 }
 
+/* Media Queries */
 @media (max-width: 990px) {
   #title {
     text-align: center;
