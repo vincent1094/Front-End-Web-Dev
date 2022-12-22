@@ -1,0 +1,58 @@
+/**
+ * Welcome to the Stanford Karel IDE.
+ * This is a free space for you to 
+ * write any Karel program you want.
+ **/
+function main(){
+   turnLeft();
+   bigCircleBeepers();
+   putBeeper();
+   squarePlant();
+   smallCircleBeepers();
+   squarePlant();
+}
+
+function bigCircleBeepers() {
+   plantBeeperOuterRow();
+   turnRight();
+   plantBeeperOuterRow();
+   turnRight();
+   plantBeeperOuterRow();
+   turnRight();
+   plantBeeperOuterRow();
+}
+
+function smallCircleBeepers() {
+   plantBeeperInnerRow();
+   turnRight();
+   plantBeeperInnerRow();
+   turnRight();
+   plantBeeperInnerRow();
+   turnRight();
+   plantBeeperInnerRow();
+}
+
+function plantBeeperOuterRow() {
+   move();
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+}
+
+function plantBeeperInnerRow() {
+   move();
+   move();
+   putBeeper();
+}
+
+function squarePlant(){
+   pickBeeper();
+   turnRight();
+   turnRight();
+   move();
+   turnLeft();
+   move();
+   putBeeper();
+}

@@ -1,0 +1,67 @@
+.anchor-ad-hide::before,
+.anchor-ad-show::before {
+  z-index: 100000;
+  position: absolute;
+  content: '>';
+	font-weight: 300;
+	font-family: Arial, sans-serif;
+	color: gray;
+	right: 15px;
+	top: -39px;
+	font-size: 20px;
+	cursor: pointer;
+	background-color: white;
+	padding: 15px 5px;
+	border: 1px solid gray;
+}
+
+.anchor-ad-hide::before {
+  border-right: none;
+  border-radius: 5px 0px 0px 5px;
+  transform: rotate(90deg);
+}
+
+.anchor-ad-show::before {
+  border-left: none;
+  border-radius: 0px 5px 5px 0px;
+  transform: rotate(270deg);
+}
+
+.anchor-ad {
+  z-index: 100000;
+  position: fixed;
+  bottom: 0px;
+  width: fit-content;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.anchor-ad-animation-show {
+  animation: slide-in 2s forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.anchor-ad-animation-hide {
+  animation: slide-out 2s forwards;
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
