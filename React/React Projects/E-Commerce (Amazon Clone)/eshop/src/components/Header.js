@@ -1,4 +1,3 @@
-import react from "react";
 import "./Header.css";
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import StorefrontIcon from '@mui/icons-material/Storefront';
