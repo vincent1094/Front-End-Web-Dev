@@ -1,0 +1,21 @@
+<%- include("partials/header.ejs") %>
+
+    <h1 class="rounded text-secondary"><%= new Date().toLocaleDateString("en-US", {weekday: "long", month: "long", day: "numeric"}) %></h1>
+    
+    <hr>
+
+    <div class="items">
+        <% list.forEach(element => { %>
+            <div class="item">
+                <input type="checkbox">
+                <p><%= element %></p>
+            </div>    
+        <% }); %>    
+    </div>
+   
+    <form action="/submit-day" method="post">
+        <input type="text" name="todo" placeholder="New Item">
+        <input type="submit" value="New ToDo">
+    </form>
+
+<%- include("partials/footer.ejs") %>
