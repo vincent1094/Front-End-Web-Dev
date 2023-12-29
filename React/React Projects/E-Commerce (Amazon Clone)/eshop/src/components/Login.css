@@ -36,8 +36,14 @@
     margin-bottom: 20px;
   }
 
+.login__container > form {
+    display: flex;
+    flex-direction: column;
+}
+
 .login__container > form > h5 {
     margin-bottom: 5px;
+    align-self: flex-start;          
 }
 
 .login__container > form > input {
@@ -45,7 +51,9 @@
     margin-bottom: 10px;
     background-color: white;
     width: 98%;
-  }
+    padding: 1px 6px;
+    align-self: center;
+}
 
 .login__container > p {
     margin-top: 15px;
