@@ -18,7 +18,8 @@ const Login = () => {
 
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        navigate.navigate("/");
+        navigate("/");
+        alert("Login successful.")
       })
       .catch((error) => alert(error.message));
   };
@@ -28,7 +29,8 @@ const Login = () => {
 
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        navigate.navigate("/");
+        navigate("/");
+        alert("User successfully created.")
       })
       .catch((error) => alert(error.message));
   };
