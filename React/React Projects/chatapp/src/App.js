@@ -11,7 +11,7 @@ function App() {
         userName="thanh"
         userSecret="nguyen"
         renderChatFeed= { (chatAppProps) => <ChatFeed  {...chatAppProps} />}
-        // onNewMessage= { () => new Audio('https://chat-engine-assets.s3.amazonaws.com/click.mp3')}
+        onNewMessage= { () => new Audio('https://chat-engine-assets.s3.amazonaws.com/click.mp3')}
       />
     </div>
   );
